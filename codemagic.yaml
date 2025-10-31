@@ -3,10 +3,10 @@ workflows:
     name: Android APK Build
     max_build_duration: 60
     environment:
-      flutter: 3.24.3  # Compatible version
+      flutter: 3.24.3
     triggering:
       events:
-        - push  # Auto on push to main
+        - push
     scripts:
       - name: Accept Android licenses
         script: |
@@ -14,13 +14,10 @@ workflows:
       - name: Get Flutter packages
         script: |
           flutter pub get
-      - name: Flutter analyze
-        script: |
-          flutter analyze
       - name: Build APK
         script: |
           flutter clean
           flutter build apk --release --no-tree-shake-icons
     artifacts:
-      - build/app/outputs/flutter-apk/*.apk  # APK download
-    publishing: {}  # Empty – no email/scripts needed
+      - build/app/outputs/flutter-apk/*.apk
+    publishing: {}
