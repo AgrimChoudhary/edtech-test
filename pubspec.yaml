@@ -10,8 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   
-  # Supabase
-  supabase_flutter: ^2.3.4
+  # Supabase (Downgraded to avoid app_links dependency)
+  supabase_flutter: ^0.3.3
   
   # Firebase Cloud Messaging (Updated to latest)
   firebase_core: ^3.6.0
