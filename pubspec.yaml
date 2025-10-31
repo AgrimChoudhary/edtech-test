@@ -44,6 +44,9 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.0
 
+dependency_overrides:
+  app_links: any  # Override to exclude problematic app_links dependency
+
 flutter:
   uses-material-design: true
   assets:
