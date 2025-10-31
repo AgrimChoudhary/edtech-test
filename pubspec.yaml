@@ -30,8 +30,8 @@ dependencies:
   http: ^1.2.2
   shared_preferences: ^2.3.3
   
-  # Google Sign In (Pre-app_links version - no transitive dependency)
-  google_sign_in: ^4.6.0
+  # Google Sign In (4.x stable version - no app_links dependency)
+  google_sign_in: ^4.5.9
   
   # URL Launcher
   url_launcher: ^6.3.1
