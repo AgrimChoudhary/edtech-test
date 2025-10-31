@@ -1,19 +1,12 @@
 workflows:
   android-apk:
-    name: Lakshya Android APK Build
+    name: Android APK Build
     max_build_duration: 60
     environment:
-      flutter: 3.24.3
-      vars:
-        PACKAGE_NAME: "com.lakshya.app"
-      android_signing:
-        - keystore_reference
-      xcode:
-        xcode_version: 14.3.1
+      flutter: 3.24.3  # Compatible version
     triggering:
       events:
-        - push
-        - pull_request
+        - push  # Auto on push to main
     scripts:
       - name: Accept Android licenses
         script: |
@@ -29,15 +22,5 @@ workflows:
           flutter clean
           flutter build apk --release --no-tree-shake-icons
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
-      - build/app/outputs/apk/debug/app-debug.apk
-      - app_summary.json
-    publishing:
-      email:
-        notify:
-          success: true
-          failure: true
-      scripts:
-        - echo "Lakshya APK built successfully!"
-        - echo "Package: $PACKAGE_NAME"
-        - echo "Build time: $(date)"
+      - build/app/outputs/flutter-apk/*.apk  # APK download
+    publishing: {}  # Empty – no email/scripts needed
