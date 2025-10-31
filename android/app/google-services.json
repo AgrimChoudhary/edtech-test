@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "991663678471",
+    "project_id": "edtech-10c62",
+    "storage_bucket": "edtech-10c62.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991663678471:android:ddb1e5ec44dc3a75f5f6a2",
+        "android_client_info": {
+          "package_name": "com.lakshya.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA818EW5nsE0WnkM2DMY_bSLksjYUTqtWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
