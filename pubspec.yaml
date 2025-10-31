@@ -13,31 +13,31 @@ dependencies:
   # Supabase
   supabase_flutter: ^2.3.4
   
-  # Firebase Cloud Messaging
-  firebase_core: ^2.24.2
-  firebase_messaging: ^14.7.10
+  # Firebase Cloud Messaging (Updated to latest)
+  firebase_core: ^3.6.0
+  firebase_messaging: ^15.1.3
   
   # State Management & Navigation
-  provider: ^6.1.1
-  go_router: ^13.0.0
+  provider: ^6.1.2
+  go_router: ^14.6.2
   
   # UI Components
-  google_fonts: ^6.1.0
-  flutter_svg: ^2.0.9
+  google_fonts: ^6.3.0
+  flutter_svg: ^2.0.10
   intl: ^0.19.0
   
   # HTTP & Storage
-  http: ^1.1.2
-  shared_preferences: ^2.2.2
+  http: ^1.2.2
+  shared_preferences: ^2.3.3
   
   # Google Sign In
-  google_sign_in: ^6.2.1
+  google_sign_in: ^6.2.2
   
   # URL Launcher
-  url_launcher: ^6.2.2
+  url_launcher: ^6.3.1
   
-  # Local Notifications
-  flutter_local_notifications: ^16.3.0
+  # Local Notifications (Updated)
+  flutter_local_notifications: ^18.0.1
 
 dev_dependencies:
   flutter_test:
