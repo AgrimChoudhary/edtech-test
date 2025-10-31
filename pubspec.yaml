@@ -30,8 +30,8 @@ dependencies:
   http: ^1.2.2
   shared_preferences: ^2.3.3
   
-  # Google Sign In (4.x stable version - no app_links dependency)
-  google_sign_in: ^4.5.9
+  # Google Sign In (Removed temporarily - null safety incompatible with Dart 3.5.3)
+  # google_sign_in: ^4.5.9  # Requires null safety support
   
   # URL Launcher
   url_launcher: ^6.3.1
